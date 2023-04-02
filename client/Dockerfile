@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 8081
 # รัน react app
-CMD [ "npm", "run", "dev", "--", "--port=8081" ]
+CMD [ "npm", "run", "dev"]
