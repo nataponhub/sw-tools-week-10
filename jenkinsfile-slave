@@ -23,7 +23,7 @@ pipeline{
             steps{
                 echo "running image"
                 sh 'docker run -d --name server -p 8085:80 oberghub/image-server:lastest'
-                sh 'docker run -d --name client -p 8081:80 oberghub/image-frontend:lastest'
+                sh 'docker run -d --name client -p 8081:8081 oberghub/image-frontend:lastest'
             }
         }
     }
