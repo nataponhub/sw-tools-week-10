@@ -22,7 +22,7 @@ pipeline{
         stage("work"){
             steps{
                 echo "running image"
-                sh 'docker run -d --name backend -p 8085:80 oberghub/image-backend:lastest'
+                sh 'docker run -d --name backend -p 8085:80 oberghub/image-server:lastest'
                 sh 'docker run -d --name frontend -p 8081:80 oberghub/image-frontend:lastest'
             }
         }
