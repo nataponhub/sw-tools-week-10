@@ -1,6 +1,6 @@
 services:
   cilent:
-    build: sw-tools-hw-week9
+    build: client
     image: natapon/image-frontend:lastest
     ports:
       - "8081:80"
