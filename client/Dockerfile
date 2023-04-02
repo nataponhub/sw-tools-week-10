@@ -13,5 +13,6 @@ RUN npm install
 # copy ไฟล์ทั้งหมดของโปรเจ็กต์เข้า container
 COPY . .
 
+EXPOSE 8081
 # รัน react app
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "dev", "--", "--port=8081" ]
