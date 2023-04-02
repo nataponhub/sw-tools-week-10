@@ -34,7 +34,7 @@ function App() {
     }
     console.log(typeof(base64));
     setIsProcessing(true)
-    axios.post("http://13.212.32.131:8088/process-image", payload, {
+    axios.post("http://13.212.9.40:8085/process-image", payload, {
       headers: {'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json'}
     }).then((response) => {
