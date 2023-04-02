@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # copy ไฟล์ทั้งหมดของโปรเจ็กต์เข้า container
-COPY . .
+COPY ./client
 
 # สั่ง build เว็บแอพพลิเคชั่น
 RUN npm run build
